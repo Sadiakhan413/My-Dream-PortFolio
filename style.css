@@ -1,0 +1,287 @@
+/* Keyframes for typing animation */
+@keyframes typingAnimation {
+    0% {
+        width: 0; /* Start with no text */
+    }
+    50% {
+        width: 0; /* Keep no text */
+    }
+    100% {
+        width: 100%; /* Fully type the text */
+    }
+}
+
+/* Keyframes for backspacing animation */
+@keyframes backspaceAnimation {
+    0% {
+        width: 100%; /* Start with fully typed text */
+    }
+    50% {
+        width: 100%; /* Keep text fully typed */
+    }
+    100% {
+        width: 0; /* Remove text */
+    }
+}
+.body{
+    background-color: rgb(177, 206, 196);
+}
+.box h3{
+    color:crimson;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.box{
+    flex-basis:30%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    height: 300px;
+}
+.skill-box{
+    flex-basis:auto;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    height: 200px;
+}
+.skill-box2{
+    flex-basis:auto;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    height: 200px;
+}
+/* .box{
+    width: 200px;
+    height: 100px;
+    background-position: 0%,0%;
+    transition: background-position 0,5s ease-in-out;
+}
+.box:hover
+{
+    background-position: 100%,0%;
+} */
+
+ .box:hover
+{
+    background-color: #063d41;
+    color: white;
+} 
+.skill-box:hover
+{
+    background-color: #3d8b57;
+    color: white;
+}
+.skill-box2:hover
+{
+    background-color: #314672;
+    color: white;
+} 
+#servicetd
+{
+    border: 1px solid #000;
+}
+/* Apply animation to specific elements */
+.greeting h2, .greeting h3, #webheading {
+    overflow: hidden; /* Hide overflow to create typing effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: typingAnimation 3s steps(30, end), backspaceAnimation 3s steps(30, end) 3s infinite; /* Animation duration and steps */
+}
+
+.greeting h2 {
+    color: #4CAF50; /* Color of name text */
+}
+
+.greeting h3 {
+    color: #008CBA; /* Color of passion text */
+}
+
+li
+{
+    padding-left: 15%;
+}
+/* Global styles */
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+}
+.image {
+    overflow: hidden; /* Ensure the image does not overflow its container */
+   
+    position: relative; /* Positioning context for pseudo element */
+    transition: transform 0.3s ease-in-out; /* Smooth animation transition */
+}
+#home
+{
+    padding-top: 5%;
+}
+#aboutmepic
+{
+    border: white;
+    border-radius: 20%;
+
+   
+}
+#webheading
+{
+    color: crimson;
+}
+#aboutmetext
+{
+    padding-top: 5%;
+}
+.nav-item
+{
+    padding-top: 5%;
+}
+.image:hover
+{
+    width: 500px;
+    height: 500px;
+}
+
+/* Header styles */
+li {
+    text-align: right; /* Align contents to the right */
+}
+
+li a {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    transition: color 0.7s ease;
+    padding-top: 30%;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(102, 15, 32);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.7s ease;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+li a:hover {
+    color: rgb(102, 15, 32);
+}
+
+/* Image and Greeting section */
+.image {
+    float:right; /* Float image to the left */
+    margin-right: 0px; /* Add margin to separate image from text */
+    width: 300px; /* Adjust width as needed */
+
+}
+
+.image img {
+    max-width: 100%; /* Ensure image scales with its container */
+    height: 300; /* Maintain aspect ratio */
+    border-radius: 100%;
+    padding-top: 20%;
+    
+}
+
+.greeting {
+    overflow: hidden; /* Clear float issues */
+    padding-top: 15%;
+}
+
+.greeting-content {
+    margin-left: 340px; /* Adjust margin to align text with image */
+}
+
+.greeting h1, .greeting h2, .greeting h3 {
+    margin: 10px 0; /* Increase spacing between heading elements */
+    color: rgb(80, 36, 46);
+}
+
+.greeting p {
+    margin-top: 20px; /* Increase top margin for paragraph */
+    font-size: 18px; /* Adjust font size for readability */
+    line-height: 1.6; /* Improve line spacing */
+    color: #06363a;
+}
+
+/* Button styles */
+.buttons {
+    margin-top: 20px;
+/
+}
+
+button {
+    
+    padding: 12px 24px; /* Increase button padding */
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px; /* Adjust button border radius */
+    font-size: 16px;
+}
+
+.connect-button {
+    background-color: #4CAF50;
+    color: white;
+}
+#about
+{
+   
+    padding-top: 5%;
+}
+
+#skills
+{
+   
+    padding-top: 5%;
+}
+h3{
+    color: rgb(78, 8, 78);
+}
+#skillpic
+{
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+#skilltext
+{
+    padding-top: 0%;
+
+}
+.hire-button {
+    background-color: #008CBA;
+    color: white;
+    margin-left: 60px;
+    margin-right: 5%;
+}
+#webheading:hover
+{
+    color: green;
+    text-decoration: dashed;
+}
+button:hover {
+    padding: 20px 30px;
+    opacity: 0.8;
+
+}
+
+
